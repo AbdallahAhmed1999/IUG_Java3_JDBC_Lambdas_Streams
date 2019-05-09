@@ -10,6 +10,7 @@ package Q3;
  * @author Abdallah_Ahmed
  */
 public class Invoice {
+
     private int partNumber;
     private String partDescription;
     private int quantity;
@@ -22,8 +23,6 @@ public class Invoice {
         this.price = price;
     }
 
-    
-    
     public int getPartNumber() {
         return partNumber;
     }
@@ -55,15 +54,14 @@ public class Invoice {
     public void setPrice(double price) {
         this.price = price;
     }
-    
-    public Double invoiceValue(){
-        return this.getQuantity()*this.getPrice();
+
+    public Double invoiceValue() {
+        return this.getQuantity() * this.getPrice();
     }
 
     @Override
     public String toString() {
-        return String.format("%-6d | %-15s | %-10d | %-10.2f", getPartNumber(),getPartDescription(),getQuantity(),getPrice());
+        return String.format("%-6d | %-15s | %-10d | %-10.2f", getPartNumber(), getPartDescription(), getQuantity(), getPrice());
     }
 
-    
 }

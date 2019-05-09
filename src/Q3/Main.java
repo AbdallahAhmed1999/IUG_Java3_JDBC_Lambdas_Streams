@@ -31,8 +31,8 @@ public class Main {
 //        for (Invoice invoice : invoices) {
 //            db.addInvoice(invoice);
 //        }
-
-ArrayList<Invoice> invoiceList = db.getInvoices();
+        
+        ArrayList<Invoice> invoiceList = db.getInvoices();
 
         //a the results are sorted by Description
         System.err.printf("%-6s | %-15s | %-10s | %-10s\n", "Number", "Description", "Quantity", "Price");
