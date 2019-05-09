@@ -5,7 +5,6 @@
  */
 package Q2;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -21,7 +20,7 @@ import java.util.stream.Stream;
  */
 public class Main {
 
-    public static void main(String[] args) throws FileNotFoundException, IOException {
+    public static void main(String[] args){
 
         Path file = Paths.get("./src/Q2/test.txt");
         try {
